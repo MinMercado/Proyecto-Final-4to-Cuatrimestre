@@ -1,0 +1,65 @@
+
+#form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #e0fff3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+h2 {
+    color: #2c386d; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.colorh2{
+    color: #2c386d; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    display: grid;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="apellidos"], input[type="direccion"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #57acd3;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #57acd3;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,440 @@
+/* Estilo General del Cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e6f1fc;
+}
+
+/* Estilo del Encabezado */
+header {
+    position: relative;
+    background-image: url('http://localhost/PROYECTOAWA/imagenes/drop-of-water-578897_640.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(80, 88, 194);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Superposición blanca semi-transparente */
+    z-index: 1;
+}
+
+header h1, header h3, nav, #inicio {
+    position: relative;
+    z-index: 2; /* Para asegurar que el contenido esté por encima de la superposición */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Blanco casi transparente */
+    z-index: 3; /* Asegura que la barra de navegación esté por encima de la superposición */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem; /* Tamaño de letra más grande */
+    color: #007bff !important; /* Azul más llamativo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3 !important; /* Azul más oscuro al pasar el mouse */
+}
+
+#img1 {
+    max-width: 150px; /* Tamaño reducido del logo */
+    position: relative;
+    z-index: 4; /* Asegura que el logo esté por encima de la superposición */
+}
+/* Estilo de la Navegación */
+
+
+/* Estilo de Encabezados */
+h1#titulo {
+    font-size: 60px;
+}
+
+h3#sub {
+    font-size: 30px;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    text-align: left;
+    padding: 1rem;
+    color: #c7dff8;
+}
+
+#titulo {
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+#sub {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0.5rem;
+}
+
+/* Estilo del Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form select {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de Secciones en General */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    padding: 20px;
+}
+
+section#inicio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 20vh;
+    padding: 20px;
+}
+
+/* Estilo del Contenido */
+.content {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(41, 39, 39, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.content p, .content h4 {
+    display: flex;
+    align-items: center;
+}
+
+.content h4 {
+    color: #4ba8ff;
+}
+
+.content i {
+    margin-right: 8px;      
+    color: #555;
+}
+
+/* Estilo de Fieldset y Legend */
+fieldset {
+    border: 2px solid #4b90ff;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #565858;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo de Inputs */
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo de Imágenes */
+img#img2 {
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img#img2.animate {
+    transform: scale(1.05);
+}
+
+img#img3 {
+    width: 600px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img#img4 {
+    width: 500px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de Encabezados Específicos */
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+h2#nos {
+    color: #353535;
+    font-size: 50px;
+}
+
+p#n {
+    font-size: 25px;
+}
+
+h2#cont {
+    color: #353535;
+}
+
+/* Estilo de la Sección de Servicios */
+section#servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-image: url('imagenes/fondo-textura-agua-dulce-liquido-transparente_53876-142911.avif');
+}
+
+#servicios div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+#servicios div:hover {
+    transform: scale(1.05);
+}
+
+#servicios img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo de Precios */
+#precio1{
+    background-color: white;
+}
+
+#ser  {
+    color: #1f1d1d;
+}
+
+#precio h4 {
+    text-align: center;
+}
+
+#precio p {
+    text-align: justify;
+    text-align: center;
+}
+
+.bg-custom {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con 80% opacidad */
+}
+
+/* Estilo de la Tabla de Precios */
+#Tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+#Tabla div {
+    background-color: rgba(136, 236, 253, 0.589);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+#Tabla div:hover {
+    transform: scale(1.05);
+}
+
+#Tabla p {
+    color: #353535;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#Tabla h3 {
+    color: #333333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#Tabla button {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#Tabla button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del Pie de Página */
+footer {
+    background-color: #f9f9fb;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-links {
+    margin: 30px 0;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de Párrafos */
+p#pF {
+    font-size: 50px;
+}
+
+/* Estilo del carrusel */
+.carousel-item img {
+    max-height: 400px;
+    object-fit: contain;
+    width: 100%;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  hr{
+    margin: 5px;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  #headline,
+  #subheadline {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  .titulo-azul {
+    color: rgb(76, 134, 211);
+  }
